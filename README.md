@@ -2,23 +2,30 @@
 
 Este projeto consiste na criação de um bot para o Telegram cuja funcionalidade é mandar sinopses para a One Piece Wiki para o usuário. Para isso, foi necessário o uso de diferentes bibliotecas para que complementassem suas funções.
 
-BeautifulSoup: Responsável por encontrar e escrever nos arquivos os resumos dos arcos e links de cada página.
-Selenium: Responsável por abrir o navegador e fornecer cliques para as páginas seguintes.
-Requests: Responsável pelas requisições HTTP's das páginas.
-Telepot: Responsável para trabalhar com a API do telegram.
+BeautifulSoup: 
+Responsável por encontrar e escrever nos arquivos os resumos dos arcos e links de cada página.
+
+Selenium: 
+Responsável por abrir o navegador e fornecer cliques para as páginas seguintes.
+
+Requests: 
+Responsável pelas requisições HTTP's das páginas.
+
+Telepot: 
+Responsável para trabalhar com a API do telegram.
 
 Arquivos:
 
-Sinopses.py
+Sinopses.py:
 Foi a ideia primária do projeto, automatiza cliques e busca a sinopse de cada arco da obra.
 
-Funcoes.py
+Funcoes.py:
 Contém as funções que foram inicialmente utilizadas no arquivo de sinopses, facilitando reaproveitamento de código nos outros arquivos.
 
-Encontrarlink.py
+Encontrarlink.py:
 Aproveita a ideia do arquivo de sinopses e , em vez de escrever os resumos de cada arco, escreve os links.
 
-Links.txt
-Arquivo que contém os links de todos os arcos, serve para que o arquivo do bot possa acessar o link do arco especificado pelo usuário através de uma requisição http.
+Links.txt:
+Arquivo que contém os links de todos os arcos, serve para que o arquivo do bot possa acessar o link do arco especificado pelo usuário através do número do arco pedido. Uma vez que os links foram transformados em uma lista no arquivo bot.py(ainda não upado), cada link sera um item da lista, facilitando sua busca.
 
 
