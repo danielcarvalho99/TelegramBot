@@ -10,11 +10,12 @@ arquivo = open("links.txt","r")
 linhas = arquivo.readlines()
 api = "Insira sua API do Telegram"
 bot = telepot.Bot(api)
+textoInicial = "Olá, este é o OnePieceWikiPtBot! Digite um número e receberá a sinopse desse arco."
 
 def exibirMensagemInicial(msg):
     _id = msg['from']['id']
-    if(msg['message_id'] == 1):
-        bot.sendMessage(_id,"Olá, este é o OnePieceWikiPtBot! Digite um número e receberá a sinopse desse arco")
+    if(msg['text'] == "/help"):
+        bot.sendMessage(_id,textoInicial)
 
 def encontrarLinkdoArco(arco):
     linkDoArco = linhas[arco - 1]
@@ -22,9 +23,14 @@ def encontrarLinkdoArco(arco):
     return linkCorreto
 
 def exibirDados(msg):
-    print(msg['from']['first_name'] + " " +  msg['from']['last_name'])
+    try:
+        print(msg['from']['first_name'] + msg['from']['last_name'])
+    except:
+        print(msg['from']['first_name']) 
+
     print(msg['from']['id'])
     print(msg['text'])
+    print(msg['message_id'])
 
 def mandarLinkDoArco(msg):
     _id = msg['from']['id']
@@ -33,6 +39,7 @@ def mandarLinkDoArco(msg):
     sinopse = acharSinopsedoArco(link)
     bot.sendMessage(_id,sinopse)
 
+    
 def receberMensagem(msg):
     exibirMensagemInicial(msg)
     exibirDados(msg)
