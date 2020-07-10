@@ -26,6 +26,6 @@ Encontrarlink.py:
 Aproveita a ideia do arquivo de sinopses e , em vez de escrever os resumos de cada arco, escreve os links.
 
 Links.txt:
-Arquivo que contém os links de todos os arcos, serve para que o arquivo do bot possa acessar o link do arco especificado pelo usuário através do número do arco pedido. Uma vez que os links foram transformados em uma lista no arquivo bot.py(ainda não upado), cada link sera um item da lista, facilitando sua busca.
+Arquivo que contém os links de todos os arcos, serve para que o arquivo do bot possa acessar o link do arco especificado pelo usuário através do número do arco pedido.
 
 
