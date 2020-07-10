@@ -18,13 +18,14 @@ numeroDeArcos = int(input("De quantos arcos você quer a sinopse? "))
 XPath1 = '/html/body/div[3]/section/div[2]/article/div/div[1]/div[2]/aside/section[2]/table/tbody/tr/td/a'
 XPath2 = '/html/body/div[3]/section/div[2]/article/div/div[1]/div[2]/aside/section[2]/table/tbody/tr/td[2]/a'
 
-# Funcionalidades de cada página
 def encontrarPrimeiroParagrafo(link):
     textoDaPagina = requests.get(link).text
     textoLegivel = BeautifulSoup(textoDaPagina,'lxml')
     primeiroParagrafo = textoLegivel.p
     return primeiroParagrafo
 
+# As vezes a sinopse corresponde ao segundo parágrafo, enquanto o primeiro é o ano de publicação
+# Para corrigir a busca, testamos se a string é muito curta
 def acharSinopsedoArco(link):
     if len(encontrarPrimeiroParagrafo(link).text) < 30:
         sinopseDoArco = encontrarPrimeiroParagrafo(link).find_next('p').text
