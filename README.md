@@ -14,7 +14,10 @@ Responsável pelas requisições HTTP's das páginas.
 Telepot: 
 Responsável para trabalhar com a API do telegram.
 
-Arquivos:
+# Arquivos:
+
+Bot.py:
+Recebe mensagens do usuário e, contanto que seja enviado um inteiro correspondente a um arco existente, manda sua sinopse para o usuário. 
 
 Sinopses.py:
 Foi a ideia primária do projeto, automatiza cliques e busca a sinopse de cada arco da obra.
