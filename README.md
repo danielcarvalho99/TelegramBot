@@ -1,6 +1,6 @@
 # TelegramBot
 
-Este projeto consiste na criação de um bot para o Telegram cuja funcionalidade é mandar sinopses da One Piece Wiki para o usuário. Para isso, foi necessário o uso de diferentes bibliotecas para que complementassem suas funções.
+Este projeto consiste na criação de um bot para o Telegram cuja funcionalidade é mandar sinopses da One Piece Wiki para o usuário. Para isso, foi necessário o uso de diferentes bibliotecas para que suas funções se complementassem.
 
 BeautifulSoup: 
 Responsável por encontrar e escrever nos arquivos os resumos dos arcos e links de cada página.
