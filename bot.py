@@ -14,7 +14,7 @@ textoInicial = "Olá, este é o OnePieceWikiPtBot! Digite um número e receberá
 
 def exibirMensagemInicial(msg):
     _id = msg['from']['id']
-    if(msg['text'] == "/help"):
+    if(msg['text'] == "/start"):
         bot.sendMessage(_id,textoInicial)
 
 def encontrarLinkdoArco(arco):
