@@ -3,7 +3,7 @@ import telepot
 from telepot.loop import MessageLoop
 import requests
 import lxml
-from funcoes import encontrarPrimeiroParagrafo,acharSinopsedoArco,api
+from auxiliar import encontrarPrimeiroParagrafo,acharSinopsedoArco,api
 
 arquivo = open("links.txt","r")
 linhas = arquivo.readlines()
