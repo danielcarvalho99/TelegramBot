@@ -1,7 +1,8 @@
 # encoding: utf-8
 import telepot
 from telepot.loop import MessageLoop
-from funcoes import encontrarPrimeiroParagrafo,acharSinopsedoArco,api
+
+api = "1305904762:AAEPaVSnU11s9tI1-yndrurrI7KROIVrInY"
 
 bot = telepot.Bot(api)
 textoInicial = "Olá, este é o OnePieceWikiPtBot! Digite um número e receberá a sinopse do arco"
