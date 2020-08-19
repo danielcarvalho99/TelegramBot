@@ -1,6 +1,7 @@
 # encoding: utf-8
 import telepot
 from telepot.loop import MessageLoop
+from bs4 import BeautifulSoup
 
 api = "1305904762:AAEPaVSnU11s9tI1-yndrurrI7KROIVrInY"
 
