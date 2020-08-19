@@ -21,7 +21,7 @@ def exibirDados(msg):
 
 def mandarLinkDoArco(msg):
     _id = msg['from']['id']
-    bot.sendMessage(_id,"Oi")
+    bot.sendMessage(_id,"Isto é um teste")
 
 def receberMensagem(msg):
     try:
