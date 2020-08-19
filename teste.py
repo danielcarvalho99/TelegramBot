@@ -3,6 +3,7 @@ import telepot
 from telepot.loop import MessageLoop
 from bs4 import BeautifulSoup
 from selenium import webdriver
+import lxml
 
 api = "1305904762:AAEPaVSnU11s9tI1-yndrurrI7KROIVrInY"
 
