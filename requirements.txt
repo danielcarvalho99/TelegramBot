@@ -38,8 +38,6 @@ pycairo==1.16.2
 pycparser==2.20
 pycrypto==2.6.1
 pylint==1.9.5
-python-apt==1.6.4
-python-telegram-bot==12.8
 python-xapp==1.6.0
 python-xlib==0.20
 pytz==2020.1
