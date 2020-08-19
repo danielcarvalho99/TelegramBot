@@ -50,3 +50,8 @@ def clicarNoProximoArco(arcoAtual,XPath1,XPath2,driver):
 def escreverLink (driver):
     arquivo = open("links.txt", "a")
     arquivo.write(driver.current_url + "\n")
+
+
+
+
+api = "1305904762:AAEPaVSnU11s9tI1-yndrurrI7KROIVrInY"
