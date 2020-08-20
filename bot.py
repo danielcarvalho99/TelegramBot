@@ -45,7 +45,8 @@ def receberMensagem(msg):
         pass
 
 
-MessageLoop(bot,receberMensagem).run_as_thread()
+
+bot.message_loop(receberMensagem)
 
 while True:
     pass
